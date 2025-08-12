@@ -3,9 +3,9 @@
 
 ## Quick run steps
 
-- Put your adapter dir tinyllama-qlora-finetuned into backend/ (or mount it).
+- Put your adapter (in our example tinyllama-qlora-finetuned) into backend/ 
 
-- In the frontend dir:
+- Within frontend/
 `npm install`
 `npm run build`
     
