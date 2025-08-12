@@ -13,12 +13,12 @@ services:
       - ADAPTER_PATH=/app/tinyllama-qlora-finetuned
     volumes:
       - ./backend/tinyllama-qlora-finetuned:/app/tinyllama-qlora-finetuned:ro
-    #deploy:
-    #  resources:
-    #    reservations:
-    #      devices:
-    #        - capabilities: [gpu]
-    #runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    runtime: nvidia
 
   frontend:
     build:
