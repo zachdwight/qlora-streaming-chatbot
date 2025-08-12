@@ -1,12 +1,17 @@
 # qlora-streaming-chatbot
 
 
-Quick run steps
+## Quick run steps
 
-    Put your adapter dir tinyllama-qlora-finetuned into backend/ (or mount it).
+- Put your adapter dir tinyllama-qlora-finetuned into backend/ (or mount it).
 
-    From the repo root:
+- In frontend:
+`npm install`
+`npm run build`
+    
 
-        docker-compose up --build
+- From the repo root:
 
-    Open http://localhost:8080 and try the chat.
+`docker-compose up --build`
+
+- Open http://localhost:8080 and try the chat.
