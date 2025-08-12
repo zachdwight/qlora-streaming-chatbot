@@ -5,7 +5,7 @@
 
 - Put your adapter dir tinyllama-qlora-finetuned into backend/ (or mount it).
 
-- In frontend:
+- In the frontend dir:
 `npm install`
 `npm run build`
     
