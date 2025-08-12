@@ -1,4 +1,4 @@
-# chatbot-qlora
+# qlora-streaming-chatbot
 
 
 Quick run steps
