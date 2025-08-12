@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 
 export default function App() {
   const [messages, setMessages] = useState([
-    { from: "bot", text: "Hello! I'm a melting chatbot. Ask me anything." },
+    { from: "bot", text: "Hello! I'm a chatbot. Ask me anything." },
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -78,10 +78,10 @@ export default function App() {
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
       <div className="w-full max-w-xl bg-white rounded-2xl shadow-lg p-6 grid grid-rows-[auto_1fr_auto]" style={{ height: "80vh" }}>
         <header className="mb-4 flex items-center gap-3">
-          <div className="rounded-full bg-indigo-600 text-white w-10 h-10 flex items-center justify-center font-bold">CB</div>
+          <div className="rounded-full bg-indigo-600 text-white w-10 h-10 flex items-center justify-center font-bold">****</div>
           <div>
-            <h1 className="text-lg font-semibold">Melt Bot</h1>
-            <p className="text-sm text-gray-500">dna-utah.org</p>
+            <h1 className="text-lg font-semibold">Cool Bot</h1>
+            <p className="text-sm text-gray-500">v1.0</p>
           </div>
         </header>
 
