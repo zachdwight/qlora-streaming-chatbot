@@ -2,7 +2,9 @@ version: "3.9"
 
 services:
   backend:
-    build: ./backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
     container_name: chatbot-backend
     ports:
       - "5000:5000"
@@ -11,14 +13,22 @@ services:
       - ADAPTER_PATH=/app/tinyllama-qlora-finetuned
     volumes:
       - ./backend/tinyllama-qlora-finetuned:/app/tinyllama-qlora-finetuned:ro
-    # enable GPU access (requires NVIDIA runtime & container toolkit)
-    deploy: {}
-    gpus: all
+    #deploy:
+    #  resources:
+    #    reservations:
+    #      devices:
+    #        - capabilities: [gpu]
+    #runtime: nvidia
 
   frontend:
-    build: ./frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
     container_name: chatbot-frontend
     ports:
       - "8080:80"
     depends_on:
       - backend
+    # Optional: mount frontend source for live dev (remove in production)
+    volumes:
+      - ./frontend:/app
