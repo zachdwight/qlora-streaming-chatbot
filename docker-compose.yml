@@ -6,13 +6,14 @@ services:
     container_name: chatbot-backend
     ports:
       - "5000:5000"
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [gpu]
+    environment:
+      - BASE_MODEL=TinyLlama/TinyLlama-1.1B-Chat-v1.0
+      - ADAPTER_PATH=/app/tinyllama-qlora-finetuned
+    volumes:
+      - ./backend/tinyllama-qlora-finetuned:/app/tinyllama-qlora-finetuned:ro
+    # enable GPU access (requires NVIDIA runtime & container toolkit)
+    deploy: {}
+    gpus: all
 
   frontend:
     build: ./frontend
