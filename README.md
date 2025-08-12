@@ -1,15 +1,24 @@
 # qlora-streaming-chatbot
 
+## Quick Start
+Follow these simple steps to get your QLoRA streaming chatbot up and running:
 
-## Quick run steps
+1. **Add your adapter**  
+   Place your fine-tuned adapter folder (e.g., `tinyllama-qlora-finetuned`) inside the `backend/` directory.
 
-- Put your adapter (in our example tinyllama-qlora-finetuned) into backend/ 
+2. **Prepare the frontend**  
+   Navigate to the `frontend/` folder and run:  
+   ```bash
+   npm install
+   npm run build
+     ```
 
-- Within frontend/
-`npm install`
-`npm run build`
-    
+3. **Build and launch with Docker Compose**  
+   From the root of the repository, run: 
+   ```bash
+   docker-compose up --build
+     ```
 
-- From the repo root: `docker-compose up --build`
+4. **Start Chatting!**  
+   Open your browser and go to http://localhost:8080 to try out the chatbot interface.
 
-- Open http://localhost:8080 and try the chat.
