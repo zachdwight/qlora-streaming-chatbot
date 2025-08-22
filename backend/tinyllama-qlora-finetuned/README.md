@@ -147,7 +147,6 @@ Use the code below to get started with the model.
 
 <!-- Total emissions (in grams of CO2eq) and additional considerations, such as electricity usage, go here. Edit the suggested text below accordingly -->
 
-Carbon emissions can be estimated using the [Machine Learning Impact calculator](https://mlco2.github.io/impact#compute) presented in [Lacoste et al. (2019)](https://arxiv.org/abs/1910.09700).
 
 - **Hardware Type:** [More Information Needed]
 - **Hours used:** [More Information Needed]
