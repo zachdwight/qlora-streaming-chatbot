@@ -10,7 +10,7 @@ tags:
 
 # Model Card for Model ID
 
-I did not fill this out, but this model is an example of training on biotech Q&A.
+I did not fill this out, but this model is an example of training on biotech Q&A data scraped from PDF collection.
 
 
 
